@@ -1,134 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--=============== FAVICON ===============-->
-   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-   <!--=============== REMIXICONS ===============-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-
-   <!--=============== Font Awesome  ===============-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-   <!--=============== CSS ===============-->
-   <link rel="stylesheet" href="styles.css">
-
-   <title>Salma Khaled El-Hennawi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma Khaled El-Hennawy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Salma Khaled El-Hennawi</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i>
+                Salma<span> Khaled</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
             <div class="hero-content">
-                <h1>Full Stack Developer & AI Student</h1>
-                <p>I'm passionate about creating beautiful, functional, and user-friendly web experiences. Currently enhancing my technical skills and working on real-world projects.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                <h1>Salma Khaled <span>El-Hennawy</span></h1>
+                <p class="hero-subtitle">Software Engineering Student & Frontend Developer</p>
+                <p class="hero-description">
+                    Software Engineering student at The Egyptian Russian University, passionate about 
+                    Web & Software Development. I have hands-on experience in several programming 
+                    languages and development tools. Currently focusing on enhancing my technical skills 
+                    and working on real-world projects.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                </div>
+                
+                <div class="hero-contact-info">
+                    <div class="contact-badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cairo, Egypt</span>
+                    </div>
+                    <div class="contact-badge">
+                        <i class="fas fa-phone"></i>
+                        <span>+20 127 629 2696</span>
+                    </div>
+                    <div class="contact-badge">
+                        <i class="fas fa-envelope"></i>
+                        <span>salma.k.elhennawi@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="profile-photo-container">
+                    <div class="profile-photo">
+                        <img src="assets/profile.jpg" alt="Salma Khaled El-Hennawy">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                            <h3>Salma Khaled</h3>
+                            <p>AI Student & Frontend Developer</p>
+                        </div>
+                    </div>
+                    <div class="profile-decoration"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about-section" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Passionate software engineering student with expertise in modern web technologies</p>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Hello! I'm Salma Khaled El-Hennawi</h3>
-                    <p>I'm an Artificial Intelligence student at The Egyptian Russian University, passionate about Web & Software Development. I have hands-on experience in several programming languages and development tools.</p>
-                    <p>Currently focusing on enhancing my technical skills and working on real-world projects to strengthen my portfolio.</p>
-                    <div class="skills">
-                        <span class="skill-item"><i class="fab fa-html5"></i> HTML</span>
-                        <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS</span>
-                        <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
-                        <span class="skill-item"><i class="fab fa-angular"></i> Angular</span>
-                        <span class="skill-item"><i class="fab fa-java"></i> Java</span>
-                        <span class="skill-item"><i class="fab fa-python"></i> Python</span>
-                        <span class="skill-item"><i class="fas fa-database"></i> SQL</span>
-                        <span class="skill-item"><i class="fab fa-windows"></i> C++</span>
-                        <span class="skill-item"><i class="fab fa-microsoft"></i> .NET</span>
-                        <span class="skill-item"><i class="fas fa-chart-bar"></i> Power BI</span>
-                        <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
-                    </div>
+                    <p>
+                        I am a dedicated Software Engineering student specializing in Artificial Intelligence 
+                        at The Egyptian Russian University. My passion lies in creating beautiful, functional, 
+                        and user-centric web applications using modern technologies.
+                    </p>
+                    <p style="margin-top: 20px;">
+                        With hands-on experience in Angular, TypeScript, and ASP.NET Core, I enjoy solving 
+                        complex problems and building applications that make a difference. I'm constantly 
+                        learning new technologies and best practices to enhance my skills.
+                    </p>
                 </div>
-                <div class="about-education">
-                    <h3>Education</h3>
-                    <p><strong>Bachelor of Artificial Intelligence</strong><br>
-                    Faculty of Artificial Intelligence, The Egyptian Russian University<br>
-                    10/2023 – Present<br>
-                    GPA: 3.02</p>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend Development</h3>
+                        <p>Specialized in Angular, TypeScript, and responsive design</p>
+                    </div>
                     
-                    <h3>Languages</h3>
-                    <p>Arabic: Native<br>
-                    English: Professional</p>
+                    <div class="highlight-item">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Modern Architecture</h3>
+                        <p>Experience with Micro-Frontends and modular design</p>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <i class="fas fa-palette"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centric design principles and prototyping</p>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Continuous Learning</h3>
+                        <p>Currently pursuing AI degree with 3.02 GPA</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="section education-section" id="education">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">7/2025 – Present</span>
-                        <h3>Software Engineer</h3>
-                        <p>AMAN Holding, Maadi, Cairo</p>
+            <div class="section-title">
+                <h2>Education & Certificates</h2>
+                <p>My academic background and professional certifications</p>
+            </div>
+            
+            <div class="education-container">
+                <div class="education-card">
+                    <h3>Bachelor of Artificial Intelligence</h3>
+                    <div class="education-meta">
+                        <span>Faculty of AI, Egyptian Russian University</span>
+                        <span>10/2023 – Present</span>
+                    </div>
+                    <p><strong>Location:</strong> Badr City, Cairo</p>
+                    <div class="gpa-badge">GPA: 3.02</div>
+                </div>
+                
+                <div class="education-card">
+                    <h3>Certificates</h3>
+                    <div style="margin-top: 20px;">
+                        <p><strong>ITI Summer Training – Full Stack Web Development using .NET</strong></p>
+                        <p class="certificate-date">08/2025 – 09/2025</p>
+                        
+                        <p style="margin-top: 20px;"><strong>ITI Summer Training – Java Programming and OOP</strong></p>
+                        <p class="certificate-date">07/2024 – 08/2024</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">8/2025 – Present</span>
-                        <h3>Full Stack .NET Development Training</h3>
-                        <p>Information Technology Institute (ITI)</p>
-                        <p>Intensive training program in Full Stack Development with .NET framework, covering both frontend and backend technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+                <p>Professional journey and internship experiences</p>
+            </div>
+            
+            <div class="experience-container">
+                <!-- Experience 1 -->
+                <div class="experience-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-content">
+                        <h3>Software Development Intern – Angular Frontend Web Developer</h3>
+                        <div class="experience-meta">
+                            <span>Digital Egypt Pioneers Initiative (DEPI)</span>
+                            <span>06/2025 – 12/2025</span>
+                        </div>
+                        <p><em>Remote</em></p>
                         <ul>
-                            <li>.NET Framework and .NET Core</li>
-                            <li>ASP.NET MVC and Web API</li>
-                            <li>Entity Framework and SQL Server</li>
-                            <li>Frontend technologies (HTML, CSS, JavaScript)</li>
+                            <li>Angular development using TypeScript, HTML5, CSS3, JavaScript</li>
+                            <li>Responsive UI implementation with Bootstrap</li>
+                            <li>Applied UX/UI design principles to build user-centric interfaces</li>
+                            <li>Git & GitHub version control</li>
+                            <li>Basic backend integration (Node.js, Express)</li>
+                            <li>Unit testing, documentation, and capstone project delivery</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">6/2025 – Present</span>
-                        <h3>Angular Frontend Web Development</h3>
-                        <p>Digital Egypt Pioneers Initiative (DEPI)</p>
+                
+                <!-- Experience 2 -->
+                <div class="experience-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-content">
+                        <h3>Software Engineer Intern – Angular Frontend Web Developer</h3>
+                        <div class="experience-meta">
+                            <span>AMAN Holding</span>
+                        </div>
+                        <ul>
+                            <li>Angular Micro-Frontends using Module Federation</li>
+                            <li>OnPush Change Detection & trackBy for performance optimization</li>
+                            <li>Refactoring legacy Angular projects following modern best practices</li>
+                            <li>Modular app architecture: feature modules, lazy loading, shared/core modules</li>
+                            <li>Dependency Injection & RxJS for state management</li>
+                            <li>Template-driven & reactive forms with validation</li>
+                            <li>REST API integration, authentication, and AuthGuards</li>
+                            <li>Hands-on mini projects implementing modular architecture, RxJS, forms, and API calls</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">8/2024 – 9/2024</span>
+                
+                <!-- Experience 3 -->
+                <div class="experience-item">
+                    <div class="timeline-dot"></div>
+                    <div class="experience-content">
                         <h3>Business Intelligence Intern</h3>
-                        <p>Advanced Computer Technology (ACT), Smart Village, Giza</p>
+                        <div class="experience-meta">
+                            <span>Advanced Computer Technology (ACT)</span>
+                        </div>
                         <ul>
                             <li>Analyzed and visualized pizza restaurant sales data using Power BI</li>
                             <li>Cleaned data and resolved date-time inconsistencies</li>
@@ -137,138 +238,305 @@
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <span class="timeline-date">7/2024 – 8/2024</span>
-                        <h3>Java & OOP Training</h3>
-                        <p>Information Technology Institute (ITI)</p>
-                        <p>Summer training program in Java Programming and Object-Oriented Programming (OOP)</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects-section" id="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Real-world applications and case studies I've worked on</p>
+            </div>
+            
             <div class="projects-grid">
+                <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/shopping.png" alt="Online Shopping System">
+                    <div class="project-header">
+                        <h3>Public Transport Tracker</h3>
+                        <div class="project-date">12/2025 – DEPI Project Angular Team</div>
                     </div>
-                    <div class="project-info">
-                        <h3>Online Shopping System</h3>
-                        <p>Developed a Java online shopping system with customer and company dashboards. Implemented user authentication with separate roles for customers and companies.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">OOP</span>
-                            <span class="project-tag">GUI</span>
+                    <div class="project-body">
+                        <ul>
+                            <li>Collaborated in a team project to build a real-world public transport tracking system</li>
+                            <li>Developed frontend features using Angular, TypeScript, HTML, CSS, and Tailwind</li>
+                            <li>Implemented responsive design and dynamic data visualization</li>
+                            <li>Integrated map and location services to visualize transport routes</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Git</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SalmaElhennawi/Online-Shopping-System" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/mazenshama/Public-Transport-Tracker" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
+                
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/paint.png" alt="Paint Brush Application">
+                    <div class="project-header">
+                        <h3>Noon App Redesign – UI/UX</h3>
+                        <div class="project-date">11/2025</div>
                     </div>
-                    <div class="project-info">
-                        <h3>Paint Brush Application</h3>
-                        <p>Developed a Java Paint Brush Application with an interactive Graphical User Interface (GUI). Implemented freehand drawing, shape filling, and file operations.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Java</span>
-                            <span class="project-tag">GUI</span>
-                            <span class="project-tag">OOP</span>
-                            <span class="project-tag">Swing</span>
+                    <div class="project-body">
+                        <ul>
+                            <li>Conducted user research and created user flows to identify pain points</li>
+                            <li>Redesigned app interface focusing on visual hierarchy, spacing, and typography</li>
+                            <li>Enhanced CTA visibility and content accessibility to increase user engagement</li>
+                            <li>Applied UI design principles including refined color schemes</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">User Research</span>
+                            <span class="tech-tag">Prototyping</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SalmaElhennawi/Paint-Brush" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://www.behance.net/gallery/240828661/UIUX-Case-Study-Noon-Redesigning" target="_blank" class="project-link">
+                            View Case Study <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
+                
+                <!-- Project 3 -->
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/BI.png" alt="Sales Data Analysis">
+                    <div class="project-header">
+                        <h3>Student Management System – ASP.NET Core MVC</h3>
+                        <div class="project-date">10/2025</div>
                     </div>
-                    <div class="project-info">
-                        <h3>Sales Data Analysis</h3>
-                        <p>Analyzed and visualized pizza restaurant sales data using Power BI. Created dashboards for sales trends, top items, and peak periods.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Power BI</span>
-                            <span class="project-tag">Data Analysis</span>
-                            <span class="project-tag">DAX</span>
-                            <span class="project-tag">Data Visualization</span>
+                    <div class="project-body">
+                        <ul>
+                            <li>Built ASP.NET Core MVC web application to manage students, courses, departments, and instructors</li>
+                            <li>Implemented CRUD operations using Entity Framework Core (Code First)</li>
+                            <li>Developed responsive Razor Views using Bootstrap, Tag Helpers, and HTML Helpers</li>
+                            <li>Applied MVC architecture, Dependency Injection, Routing, and Filters</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">Entity Framework</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Bootstrap</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://www.linkedin.com/posts/salma-khaled-elhennawi_summerinternship-actup-advancedcomputertechnology-activity-7236667400559968256-YK4w" class="project-link" target="_blank"><i class="fab fa-linkedin"></i> View Project</a>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/SalmaElhennawi/Student-Management-System" target="_blank" class="project-link">
+                            View Repository <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>E-Commerce Web Application with Micro-Frontend Architecture</h3>
+                        <div class="project-date">07/2025</div>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Designed and developed responsive Angular-based e-commerce application</li>
+                            <li>Implemented core frontend features including product listing and cart management</li>
+                            <li>Built and integrated a Micro-Frontend architecture with Webpack Module Federation</li>
+                            <li>Configured dynamically loadable micro-apps at runtime</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Micro-Frontends</span>
+                            <span class="tech-tag">Webpack</span>
+                            <span class="tech-tag">Module Federation</span>
                         </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://github.com/SalmaElhennawi/e-commerce" target="_blank" class="project-link">
+                            View Repository <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>salma.k.elhennawi@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p>+201276292696</p>
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Angular</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">Bootstrap</span>
+                        <span class="skill-item">Tailwind CSS</span>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/salma-khaled-elhennawi/" target="_blank">linkedin.com/in/salma-khaled-elhennawi</a></p>
+                
+                <div class="skill-category">
+                    <h3>Backend & Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">ASP.NET Core</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Entity Framework</span>
+                        <span class="skill-item">REST APIs</span>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
+                
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">Power BI</span>
+                        <span class="skill-item">Webpack</span>
+                        <span class="skill-item">RxJS</span>
                     </div>
-                    <div class="contact-details">
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/SalmaElhennawi" target="_blank">github.com/SalmaElhennawi</a></p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">C#</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Arabic (Native)</span>
+                        <span class="skill-item">English (Professional)</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Concepts & Methodologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Micro-Frontends</span>
+                        <span class="skill-item">Modular Architecture</span>
+                        <span class="skill-item">UX/UI Design</span>
+                        <span class="skill-item">Agile Development</span>
+                        <span class="skill-item">Performance Optimization</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section" id="contact">
         <div class="container">
-            <div class="footer-content">
-                <div class="logo">Salma El-Hennawi</div>
-                
-                <p class="copyright">&copy; 2025 Salma Khaled El-Hennawi. All Rights Reserved.</p>
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Let's connect and discuss opportunities</p>
             </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+20 127 629 2696</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>salma.k.elhennawi@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">Current Status</h3>
+                    <p>Currently pursuing Bachelor of Artificial Intelligence at The Egyptian Russian University (ERU)</p>
+                    
+                    <div style="margin-top: 25px;">
+                        <h4 style="color: var(--dark); margin-bottom: 15px;">Open to:</h4>
+                        <ul>
+                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">✓ Internships</li>
+                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">✓ Part-time positions</li>
+                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">✓ Freelance projects</li>
+                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">✓ Research collaborations</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin-top: 30px; padding: 20px; background: rgba(108, 99, 255, 0.05); border-radius: var(--border-radius);">
+                        <p style="font-style: italic; color: var(--gray);">
+                            "I'm always open to discussing new opportunities, interesting projects, 
+                            or just chatting about technology and software development."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                Salma<span> Khaled</span>
+            </div>
+            
+            <p style="max-width: 600px; color: rgba(255, 255, 255, 0.8);">
+                Software Engineering Student & Frontend Developer passionate about creating beautiful, functional web applications.
+            </p>
+            
+            <div class="footer-social">
+                <a href="mailto:salma.k.elhennawi@gmail.com" class="social-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/salma-khaled-elhennawi/" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/SalmaElhennawi" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Salma Khaled El-Hennawy. All rights reserved.</p>
+                </div>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="js/main.js"></script>
 </body>
 </html>
